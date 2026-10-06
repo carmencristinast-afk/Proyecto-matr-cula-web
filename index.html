@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Tecnológico</title>
+    <!-- Bootstrap para diseño responsivo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- CABECERA -->
+    <header class="bg-white shadow-sm py-4 text-center w-100 mb-4">
+        <h1 class="h3 text-primary fw-bold mb-0">🎓 Instituto Tecnológico</h1>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="container-fluid px-5 flex-grow-1 d-flex align-items-center">
+        <div class="row g-4 justify-content-center w-100">
+            
+            <!-- LOS 3 RECTÁNGULOS DE CURSOS -->
+            <div class="col-xl-6 col-lg-6">
+                <h3 class="h5 fw-bold mb-3">Nuestros Cursos Disponibles</h3>
+                
+                <div class="card card-grande p-4 mb-3 shadow-sm border-0">
+                    <h4 class="h5 fw-bold text-primary">1. Desarrollo Web y Frontend</h4>
+                    <p class="text-muted mb-1">Creación de páginas modernas y adaptables utilizando HTML5, CSS y JavaScript.</p>
+                    <small class="text-secondary fw-bold">Duración: 6 meses | Modalidad: Híbrido</small>
+                </div>
+                
+                <div class="card card-grande p-4 mb-3 shadow-sm border-0">
+                    <h4 class="h5 fw-bold text-primary">2. Redes y Soporte Técnico</h4>
+                    <p class="text-muted mb-1">Configuración, mantenimiento preventivo y seguridad de infraestructura tecnológica.</p>
+                    <small class="text-secondary fw-bold">Duración: 6 meses | Modalidad: Presencial</small>
+                </div>
+                
+                <div class="card card-grande p-4 mb-3 shadow-sm border-0">
+                    <h4 class="h5 fw-bold text-primary">3. Secretaría Académica Digital</h4>
+                    <p class="text-muted mb-1">Gestión eficiente de trámites, documentación institucional y bases de datos en línea.</p>
+                    <small class="text-secondary fw-bold">Duración: 4 meses | Modalidad: Virtual</small>
+                </div>
+            </div>
+
+            <!-- FORMULARIO DE REGISTRO -->
+            <div class="col-xl-5 col-lg-6">
+                <div class="card card-grande p-4 shadow border-0">
+                    <h3 class="h5 fw-bold mb-4 text-center">Registro de Alumnos</h3>
+                    
+                    <form id="formAlumno">
+                        <div class="mb-3">
+                            <label class="form-label small text-muted">Nombre Completo</label>
+                            <input type="text" class="form-control form-control-lg fs-6" id="nombre" placeholder="Escribe tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small text-muted">Correo Electrónico</label>
+                            <input type="email" class="form-control form-control-lg fs-6" id="correo" placeholder="correo@ejemplo.com">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small text-muted">Seleccionar Programa</label>
+                            <select class="form-select form-select-lg fs-6" id="curso">
+                                <option value="" selected disabled>Elija una opción...</option>
+                                <option value="web">Desarrollo Web y Frontend</option>
+                                <option value="redes">Redes y Soporte Técnico</option>
+                                <option value="secretaria">Secretaría Académica Digital</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 fs-6">Registrarse Ahora</button>
+                    </form>
+
+                    <div id="mensaje" class="mt-3 text-center small fw-bold"></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-white text-muted text-center py-3 mt-4 border-top">
+        <small>&copy; 2026 Instituto Tecnológico - Todos los derechos reservados.</small>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
